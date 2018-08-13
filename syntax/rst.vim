@@ -15,6 +15,7 @@ set cpo&vim
 syn case ignore
 
 syn match   rstTransition  /^[=`:.'"~^_*+#-]\{4,}\s*$/
+syn match   rstTransition  /^\s\{4,}[$].*$/ "bold $ cmds
 
 syn cluster rstCruft                contains=rstEmphasis,rstStrongEmphasis,
       \ rstInterpretedText,rstInlineLiteral,rstSubstitutionReference,
